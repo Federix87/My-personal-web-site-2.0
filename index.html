@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My personal web site 2.0</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/images/icons8-luppolo-32.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <!-- JQUERY -->
+    <script defer type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
+
+    <!-- SCRIPT JS -->
+    <script defer src="assets/js/core.js"></script>
+    <script defer src="assets/js/app.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+    <!-- START NAVBAR -->
+    <nav class="nav wow">
+        <div class="name ">
+            <h3 class="my-name">My personal web site</h3>
+        </div>
+
+        <div class="ancor">
+            <a class="ancor-tag" href="#work">Project</a>
+            <a class="ancor-tag" href="#skills">Skills</a>
+            <a class="ancor-tag contact-modal" href="#contact"><button class="contact-button"> Contact</button></a>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START BIO MAIN -->
+    <div class="bio-main">
+
+        <div class="photo">
+            <img class="avatar primary active" src="assets/images/profilo.jpg" alt="">
+        </div>
+        <div class="bio">
+            <p>Ciao mi chiamo <strong>Federico Migliore</strong>,
+                ho scoperto da qualche mese il mondo fanstastico della programmazione, soprattuto lato Front-end. Mi
+                piace creare interfacce web minimal e soprattuto user friendly.
+                Ho terminato da poche settimane lo studio di Html, Css, Sass e Bootstrap e attualmente mi sto dedicando
+                a Javascript con cui ho implementato alcune features su dei progetti a cui ho lavorato e su questo
+                sito.
+            <p class="dinamico">
+                <strong>Stop thinking, Start doing!</strong>
+            </p>
+            </p>
+        </div>
+    </div>
+    <!-- END BIO MAIN -->
+
+
+    <!-- START PORTFOLIO SECTION -->
+    <section class="portfolio wow">
+        <div class="title-project">
+            <a name="work">
+                <h2>PROJECT</h2>
+            </a>
+        </div>
+
+        <div class="firts-work">
+            <div class="card-project card-project--1">
+                <div class="project-work1">
+                    <img class="photo1" src="assets/images/Screenshot (72).png" alt="">
+                </div>
+                <div class="description-work1">
+                    <h3>Progetto Mapty</h3>
+                    <p class="paragraph">Mapty è basato su un tutorial Js che ho seguito, il layout e le
+                        funzionalità
+                        principali sono state implementate seguendo il corso passo passo, mentre io ho implementato
+                        usando le
+                        classi
+                        ES6 le funzionalità di:
+                        restyling del layout,
+                        sort by type, remove workout/workouts, overview e modal window. Link deploy: <a
+                            href="https://mapty-project-js.netlify.app/" target="_blank">Mapty</a></p>
+                </div>
+            </div>
+
+            <div class="card-project card-project--3">
+                <div class="project-work1">
+                    <img class="photo1" src="assets/images/Screenshot (118).png" alt="">
+                </div>
+                <div class="description-work1">
+                    <h3>Progetto Lime</h3>
+                    <p class="paragraph">Questo progetto è basato sulla riproduzione di un sito di prenotazioni per
+                        monopattini
+                        elettrici. Ho
+                        imparato a gestire
+                        layout più strutturati rispetto al progetto Gmail e nello stesso tempo ho usato le proprietà
+                        contenute nei progetti
+                        precedenti. <br>
+                        Link repository: <a href="https://github.com/Federix87/Progetto-Lime" target="_blank">Lime
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-project card-project--4">
+                <div class="project-work1">
+                    <img class="photo1" src="assets/images/Screenshot (75).png" alt="">
+                </div>
+                <div class="description-work1">
+                    <h3>Progetto Counter JS</h3>
+                    <p class="paragraph">Counter JS è basato sullo sviluppo di un counter basico, dove ho utilizzato le
+                        mie prime conoscenze di Javascript. Con i pulsanti +/- è possibile
+                        incrementare/decrementare il valore visulizzato nel counter. <br>
+                        Link deploy: <a href="https://federix87.github.io/Progetto-counter/" target="_blank">Counter
+                            js</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-project card-project--2">
+                <div class="project-work1">
+                    <img class="photo1" src="assets/images/Screenshot (117).png" alt="">
+                </div>
+                <div class="description-work1">
+                    <h3>Progetto Gmail</h3>
+                    <p class="paragraph">Il progetto è una riproduzione basilarare di Gmail, in questo lavoro ho
+                        imparato
+                        ad
+                        usare la input type "checkbox" e il tag "button".
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&lsaquo;</button>
+        <button class="slider__btn slider__btn--right">&rsaquo;</button>
+    </section>
+    <!-- END PORTFOLIO SECTION -->
+
+
+
+    <!-- Start Skills -->
+
+    <section class="skills-section wow">
+        <div class="skills-title">
+            <a name="skills">
+                <h2>SKILLS</h2>
+            </a>
+
+        </div>
+        <div class="skills-container">
+            <div class="skills-buttons">
+                <button class="hard-skills-button btn-active">Hard skills</button>
+                <button class="soft-skills-button">Soft skills</button>
+            </div>
+
+            <div class="skills-description-hard active">
+                <div class="hard-skills">
+                    <div class="label-progress">
+                        <label for="html" data-text="HTML"></label>
+                        <progress class="progress-bar1" id="html" max="100" value="90" data-text="90%">
+                        </progress>
+                    </div>
+                    <div class="label-progress"><label for="css" data-text="CSS"></label> <progress
+                            class="progress-bar2" id="css" max="100" value="80" data-text="80%">80%</progress>
+                    </div>
+                    <div class="label-progress"><label for="sass" data-text="SASS"></label> <progress id="sass"
+                            max="100" value="70" data-text="70%">70%</progress>
+                    </div>
+                    <div class="label-progress"><label for="javascript" data-text="JAVASCRIPT"></label> <progress
+                            id="javascript" max="100" value="70" data-text="70%">70%</progress>
+                    </div>
+                    <div class=" label-progress  "><label for="bootstrap" data-text="BOOTSTRAP"></label> <progress
+                            id="bootstrap" max="100" value="50" data-text="60%">60%</progress>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-description-soft ">
+                <div class="soft-skills">
+                    <div class="ability">
+                        <p>
+                            • Capacità di lavorare come parte di un team
+                        </p>
+                    </div>
+                    <div class="ability">
+                        <p>
+                            • Capacità di pensiero critico e di problem solving
+                        </p>
+                    </div>
+                    <div class="ability">
+                        <p>
+                            • Proattività e attitudine ai risultati
+                        </p>
+                    </div>
+                    <div class="ability">
+                        <p>
+                            • Capacità analitiche e attenzione ai dettagli
+                        </p>
+                    </div>
+                    <div class="ability">
+                        <p>
+                            • Adattabilità
+                        </p>
+                    </div>
+                    <div class="ability">
+                        <p>
+                            • Resilienza
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SKILLS SECTION -->
+
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="contact">
+            <a href="https://www.facebook.com/federico.migliore.11/" target="
+    "> <img class="icon" src="assets/images/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/federix_aegon/" target="_blank"> <img class="icon"
+                    src="assets/images/instagram.png" alt=""></a>
+            <a href="#"><img class="icon" src="assets/images/linkedin.png" alt=""></a>
+            <a href="https://wa.me/393289076191" target="
+      "> <img class="icon" src="assets/images/whatsapp.png" alt=""></a>
+            <p class="copyright">&copy Federico Migliore | <a class="email" href="mailto:federicomigliore87@gmail.com">
+                    federicomigliore87@gmail.com | </a> <a class="github" href=" https://github.com/Federix87"
+                    target="_blank">GitHub</a> </p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- MODAL AND OVERLAY -->
+    <div class="modal hidden">
+
+        <button class="btn-close-modal">&times;</button>
+        <div class="contact-me">
+            <h2>Contact me</h2>
+        </div>
+        <div class="modal-contact-first">
+            <div class="modal-social">
+                <div>Facebook</div>
+                <div><a href="https://www.facebook.com/federico.migliore.11/" target="_blank
+                "> <img class="icon" src="assets/images/facebook.png" alt=""></a></div>
+            </div>
+            <div class="modal-social">
+                <div> Instagram</div>
+                <div>
+                    <a href="https://www.instagram.com/federix_aegon/" target="_blank"> <img class="icon"
+                            src="assets/images/instagram.png" alt=""></a>
+                </div>
+            </div>
+            <div class="modal-social">
+                <div>Linkedin</div>
+                <div>
+                    <a href="#"><img class="icon" src="assets/images/linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-contact-second">
+            <div class="modal-social">
+                <div>WhatsApp</div>
+                <div>
+                    <a href="https://wa.me/393289076191" target="_blank
+      "> <img class="icon" src="assets/images/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="modal-social">
+                <div>GitHub</div>
+                <div>
+                    <a class="github" href=" https://github.com/Federix87" target="_blank"><img
+                            src="assets/images/github.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-social">
+                <div> E-mail</div>
+                <div>
+                    <a class="email" href="mailto:federicomigliore87@gmail.com">
+                        <img src="assets/images/email.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <!-- Button Go up! -->
+    <button id="myBtn" title="Go to top">Go up!</button>
+    </div>
+    <!-- END MODAL AND OVERLAY -->
+
+
+</body>
+
+</html>
