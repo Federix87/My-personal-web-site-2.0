@@ -1611,22 +1611,40 @@ progress::-webkit-progress-value {
   top: 19%;
 }
 
-@media only screen and (min-width: 960px) {
-  /* styles for browsers larger than 960px; */
+@media only screen and (min-width: 480px) {
   .modal {
-    width: 30vw;
+    width: 60vw;
     height: 45vh;
   }
   .contact-me h2 {
-    font-size: 1.2vw;
+    font-size: 2.7vw;
   }
   .modal-contact-first {
-    font-size: 1.2vw;
+    font-size: 2vw;
   }
   .modal-contact-second {
-    font-size: 1.2vw;
+    font-size: 2vw;
   }
 }
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+  .modal {
+    width: 50vw;
+    height: 50vh;
+  }
+  .contact-me h2 {
+    font-size: 2.7vw;
+  }
+  .modal-contact-first {
+    font-size: 1.8vw;
+  }
+  .modal-contact-second {
+    font-size: 1.8vw;
+  }
+}
+
+
 @media only screen and (min-width: 1440px) {
   /* styles for browsers larger than 1440px; */
   .modal {
