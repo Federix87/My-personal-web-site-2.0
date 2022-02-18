@@ -1,16 +1,4 @@
 
-// DOM elements selector
-const softButton = document.querySelector('.soft-skills-button');
-const hardButton = document.querySelector('.hard-skills-button');
-const softSkillsContainer = document.querySelector('.skills-description-soft');
-const hardSkillsContainer = document.querySelector('.skills-description-hard');
-const contactButton = document.querySelector('.contact-modal');
-const modal = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
-const buttonCloseModal = document.querySelector('.btn-close-modal');
-const header = document.querySelector('.nav');
-const nav = document.querySelector('.nav');
-
 // Scrollify
 
 const scrollMediaQuery = window.matchMedia('(min-width: 1370px)');
@@ -67,7 +55,17 @@ let testo = new Typewriter(selezione, {
   pauseFor: 4000
 });
 
-
+// DOM elements selector
+const softButton = document.querySelector('.soft-skills-button');
+const hardButton = document.querySelector('.hard-skills-button');
+const softSkillsContainer = document.querySelector('.skills-description-soft');
+const hardSkillsContainer = document.querySelector('.skills-description-hard');
+const contactButton = document.querySelector('.contact-modal');
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const buttonCloseModal = document.querySelector('.btn-close-modal');
+const header = document.querySelector('.nav');
+const nav = document.querySelector('.nav');
 
 // Skills soft & hard button  listener
 softButton.addEventListener('click', function () {
