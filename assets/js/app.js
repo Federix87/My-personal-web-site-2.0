@@ -1,3 +1,18 @@
+
+// DOM elements selector
+const softButton = document.querySelector('.soft-skills-button');
+const hardButton = document.querySelector('.hard-skills-button');
+const softSkillsContainer = document.querySelector('.skills-description-soft');
+const hardSkillsContainer = document.querySelector('.skills-description-hard');
+const contactButton = document.querySelector('.contact-modal');
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const buttonCloseModal = document.querySelector('.btn-close-modal');
+const header = document.querySelector('.nav');
+const nav = document.querySelector('.nav');
+
+// Scrollify
+
 const scrollMediaQuery = window.matchMedia('(min-width: 1370px)');
 
 if (scrollMediaQuery.matches) {
@@ -27,6 +42,20 @@ if (scrollMediaQuery.matches) {
   });
 }
 
+const initialCoords = header.getBoundingClientRect();
+const navMediaQuery = window.matchMedia('(min-width: 1025px)');
+
+if (navMediaQuery.matches) {
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > initialCoords.top) {
+      nav.classList.add('sticky');
+    } else {
+      nav.classList.remove('sticky');
+    }
+  });
+
+// Typewriter
+
 let selezione = document.querySelector('.dinamico');
 
 let testo = new Typewriter(selezione, {
@@ -38,17 +67,9 @@ let testo = new Typewriter(selezione, {
   pauseFor: 4000
 });
 
-const softButton = document.querySelector('.soft-skills-button');
-const hardButton = document.querySelector('.hard-skills-button');
-const softSkillsContainer = document.querySelector('.skills-description-soft');
-const hardSkillsContainer = document.querySelector('.skills-description-hard');
-const contactButton = document.querySelector('.contact-modal');
-const modal = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
-const buttonCloseModal = document.querySelector('.btn-close-modal');
-const header = document.querySelector('.nav');
-const nav = document.querySelector('.nav');
 
+
+// Skills soft & hard button  listener
 softButton.addEventListener('click', function () {
   hardSkillsContainer.classList.remove('active');
   softSkillsContainer.classList.add('active');
@@ -68,31 +89,20 @@ contactButton.addEventListener('click', function () {
   overlay.classList.remove('hidden');
 });
 
+// Overlay listener
 overlay.addEventListener('click', function () {
   overlay.classList.add('hidden');
   modal.classList.add('hidden');
 });
 
+// Modal close button
 buttonCloseModal.addEventListener('click', function () {
   overlay.classList.add('hidden');
   modal.classList.add('hidden');
 });
 
-const initialCoords = header.getBoundingClientRect();
-const navMediaQuery = window.matchMedia('(min-width: 1025px)');
 
-if (navMediaQuery.matches) {
-  window.addEventListener('scroll', function () {
-    if (window.scrollY > initialCoords.top) {
-      nav.classList.add('sticky');
-    } else {
-      nav.classList.remove('sticky');
-    }
-  });
-}
-
-// slider
-
+// Slider
 const slides = document.querySelectorAll('.card-project');
 const btnLeft = document.querySelector('.slider__btn--left');
 const btnRight = document.querySelector('.slider__btn--right');
@@ -247,9 +257,8 @@ if (mq.matches) {
   });
 }
 
+// Up to 20px button appears  
 let myButton = document.querySelector('#myBtn');
-
-//Sopra i 20px appare e scompare il button
 
 const scrollFunction = function () {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -259,9 +268,9 @@ const scrollFunction = function () {
   }
 };
 
+// Button listener
 window.addEventListener('scroll', scrollFunction);
 
-// Al click del button portami su
 const topFunction = function () {
   window.scroll({ top: 0, behavior: 'smooth' });
 };
