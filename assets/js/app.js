@@ -1,6 +1,5 @@
 
 // Scrollify
-
 const scrollMediaQuery = window.matchMedia('(min-width: 1370px)');
 
 if (scrollMediaQuery.matches) {
@@ -31,7 +30,6 @@ if (scrollMediaQuery.matches) {
 }
 
 // Typewriter
-
 let selezione = document.querySelector('.dinamico');
 
 let testo = new Typewriter(selezione, {
