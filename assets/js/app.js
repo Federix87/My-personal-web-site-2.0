@@ -41,6 +41,7 @@ if (navMediaQuery.matches) {
       nav.classList.remove('sticky');
     }
   });
+}
 
 // Typewriter
 
