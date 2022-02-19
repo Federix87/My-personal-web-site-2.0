@@ -640,7 +640,7 @@ h3 {
   text-align: center;
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 1024px) {
   .portfolio {
     height: 110vh;
     display: flex;
@@ -685,7 +685,7 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1025px) {
   /* styles for browsers larger than 960px; */
   .portfolio .project-work1 {
     height: 30%;
@@ -694,13 +694,13 @@ h3 {
     height: 70%;
   }
   .portfolio .description-work1 .paragraph {
-    font-size: 1.5vh;
+    font-size: 1.4vh;
     text-align: center;
     height: 100%;
   }
   .card-project {
     width: 72%;
-    height: 55%;
+    height: 52%;
   }
 }
 @media only screen and (min-width: 1440px) {
